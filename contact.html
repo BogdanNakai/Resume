@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230315142617">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show="10000" class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__box-logo">
+						<a href="../index.html" class="header__logo">Bogdan Nakai</a>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="banner banner-contact">
+				<div class="banner__container">
+					<div class="banner__body">
+						<div class="banner__box-title title-center title-center">
+							<h2 data-watch class="banner__title title title-line title-smaller">Contact</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact__container">
+					<div class="contact__body">
+						<ul class="contact__list">
+							<li class="contact__item">
+								<a href="tel:+380985845948" class="contact__link _icon-tel">
+									+380985845948
+								</a>
+							</li>
+							<li class="contact__item">
+								<a href="mailto: bogdan.nakai@gmail.com" class="contact__link _icon-email">
+									bogdan.nakai@gmail.com
+								</a>
+							</li>
+							<li class="contact__item">
+								<a href="https://t.me/Bodia78320" target="_blank" class="contact__link _icon-telegram">Telegram</a>
+							</li>
+							<li class="contact__item">
+								<a href="viber://add?number=380985845948" class="contact__link _icon-viber">Viber</a>
+							</li>
+							<li class="contact__item">
+								<a href="https://www.linkedin.com/services/page/5940b531b622b77056" target="_blank" class="contact__link _icon-linkedin">LinkedIn</a>
+							</li>
+							<li class="contact__item">
+								<a href="https://github.com/BogdanNakai" target="_blank" class="contact__link _icon-github">GitHub</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<!-- Стилі для body -->
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: all 0.5s ease 0.3s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<!-- Стилі для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			/* Головний блок */
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			/* Блок з елементами */
+			.fls-preloader__body {
+				padding: 0.93rem;
+				max-width: 31.25rem;
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* Блок з лічильником */
+			.fls-preloader__counter {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 4.5rem;
+				color: rgb(139, 139, 139);
+			}
+
+			/* Прогресбар */
+			.fls-preloader__line {}
+
+			/* Лінія прогресбару */
+			.fls-preloader__line span {
+				display: inline-block;
+				transition: width 0.2s ease;
+				height: 0.8rem;
+				background-color: rgb(139, 139, 139);
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+					const
+						preloader = document.querySelector('.fls-preloader'),
+						showPecentLoad = document.querySelector('.fls-preloader__counter'),
+						showLineLoad = document.querySelector('.fls-preloader__line span'),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = counter = progress = 0;
+
+					htmlDocument.classList.add('loading');
+					htmlDocument.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
+						showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						const intervalId = setInterval(() => {
+							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 100);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('lock');
+						htmlDocument.classList.remove('loading');
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 10);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20230315142617"></script>
+</body>
+
+</html>

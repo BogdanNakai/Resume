@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Resume - Nakai Bogdan</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230315142617">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show="10000" class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__box-logo">
+						<a href="../index.html" class="header__logo">Bogdan Nakai</a>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="home">
+				<div class="home__container">
+					<div class="home__body">
+						<div class="home__content">
+							<p data-watch class="home__greeting _watcher-hide">
+								Welcome
+							</p>
+							<h1 data-watch class="home__title _watcher-hide">
+								I’m Nakai Bogdan
+							</h1>
+							<p data-watch class="home__profession _watcher-hide">
+								HTML - Develover
+							</p>
+							<div class="home__box-button">
+								<a data-ripple data-watch href="img/Resume Bogdan Hakai.pdf" class="home__button button shake-bottom _watcher-hide" download>Download CV</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="myWork">
+				<div class="myWork__container">
+					<div class="myWork__body">
+						<div class="myWork__box-title">
+							<h2 data-watch class="myWork__title title title-line title-smaller _watcher-hide">My Work Experiance</h2>
+						</div>
+						<div class="myWork__content">
+							<div class="myWork__list">
+								<div data-watch data-watch-once class="myWork__item _watcher-hide">
+									<a href="https://bogdannakai.github.io/Screeno/" target="_blank" href="#" class="myWork__link">
+										<div class="myWork__box-img">
+											<picture><source srcset="img/screeno.webp" type="image/webp"><img src="img/screeno.png" alt="" class="myWork__img"></picture>
+										</div>
+										<p class="myWork__name">Screeno</p>
+									</a>
+								</div>
+								<div data-watch data-watch-once class="myWork__item _watcher-hide">
+									<a href="https://bogdannakai.github.io/Landify/" target="_blank" class="myWork__link">
+										<div class="myWork__box-img">
+											<picture><source srcset="img/landify.webp" type="image/webp"><img src="img/landify.png" alt="" class="myWork__img"></picture>
+										</div>
+										<p class="myWork__name">Landify</p>
+									</a>
+								</div>
+								<div data-watch data-watch-once class="myWork__item _watcher-hide">
+									<a href="https://bogdannakai.github.io/Loft-Fur/" target="_blank" class="myWork__link">
+										<div class="myWork__box-img">
+											<picture><source srcset="img/loft_fur.webp" type="image/webp"><img src="img/loft_fur.png" alt="" class="myWork__img"></picture>
+										</div>
+										<p class="myWork__name">Loft Fur</p>
+									</a>
+								</div>
+								<div data-watch data-watch-once class="myWork__item _watcher-hide">
+									<a href="https://bogdannakai.github.io/zoka/" target="_blank" class="myWork__link">
+										<div class="myWork__box-img">
+											<picture><source srcset="img/zoka.webp" type="image/webp"><img src="img/zoka.png" alt="" class="myWork__img"></picture>
+										</div>
+										<p class="myWork__name">Zoka</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__box-title">
+							<h2 data-watch class="footer__title title _watcher-hide">
+								Intrested in my Work
+							</h2>
+							<p data-watch class="footer__text _watcher-hide">Download my cV to know more about me</p>
+							<div class="footer__box-button">
+								<a data-watch data-ripple data-goto-header data-goto=".home" class="footer__button button _icon-arrow _watcher-hide"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+	</div>
+	<!-- Стилі для body -->
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: all 0.5s ease 0.3s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<!-- Стилі для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			/* Головний блок */
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			/* Блок з елементами */
+			.fls-preloader__body {
+				padding: 0.93rem;
+				max-width: 31.25rem;
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* Блок з лічильником */
+			.fls-preloader__counter {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 4.5rem;
+				color: rgb(139, 139, 139);
+			}
+
+			/* Прогресбар */
+			.fls-preloader__line {}
+
+			/* Лінія прогресбару */
+			.fls-preloader__line span {
+				display: inline-block;
+				transition: width 0.2s ease;
+				height: 0.8rem;
+				background-color: rgb(139, 139, 139);
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+					const
+						preloader = document.querySelector('.fls-preloader'),
+						showPecentLoad = document.querySelector('.fls-preloader__counter'),
+						showLineLoad = document.querySelector('.fls-preloader__line span'),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = counter = progress = 0;
+
+					htmlDocument.classList.add('loading');
+					htmlDocument.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
+						showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						const intervalId = setInterval(() => {
+							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 100);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('lock');
+						htmlDocument.classList.remove('loading');
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 10);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20230315142617"></script>
+</body>
+
+</html>
